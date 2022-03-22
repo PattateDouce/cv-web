@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<title>Guibert Rémy</title>
+	<link rel="icon" type="image/png" href="img/icon/favicon.png"/>
+	<link rel="stylesheet" href="style.css"/>
+	<meta property="og:title" content="Guibert Rémy"/>
+	<meta property="og:description" content="Sur ce site vous trouverez mon CV, mes projets personnels, mes centres d'intérêts et les façons de me contacter."/>
+	<meta property="og:image" content="https://pattatedouce.github.io/cv-web/img/icon/embed.png"/>
+	<meta property="theme-color" content="#7d3c2d"/>
+</head>
+
+<body id="hautdepage">
+	<!-- Accueil -->
+	<section id="accueil">
+		<h3>Bienvenue sur mon site, je suis</h3>
+		<h1>Guibert Rémy</h1>
+		<h1>Étudiant en informatique</h1>
+		<picture>
+			<source srcset="img/photo-identite.webp" type="image/webp"/>
+			<source srcset="img/photo-identite.png" type="image/png"/>
+			<img src="img/photo-identite.png" width="200" height="200" alt="Photographie de moi-même" title="Photographie de moi-même"/>
+		</picture>
+		<a href="#apropos">Continuer</a>
+	</section>
+
+	<!-- Bandeau de navigation -->
+	<header>
+		<nav>
+			<a href="#hautdepage">Accueil</a>
+			<a href="#apropos">À propos</a>
+			<a href="#projets">Projets</a>
+			<a href="#interets">Intérêts</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+	<!-- À propos -->
+	<section id="apropos">
+		<h2>Qui suis-je ?</h2>
+		<p>
+			Je m'appelle Rémy Guibert, j'ai 18 ans et j'étudie depuis septembre 2021 à l'<span title="Institut Universitaire de Technologie">IUT</span> de Blagnac avec comme objectif de passer mon <span title="Bachelor Universitaire de Technologie">BUT</span> informatique, j'ai choisi cette formation car depuis le collège je suis passionné par la programmation et donc l'informatique et ses langages. J'ai appris par moi-même une bonne moitié du langage Python avec lequel j'ai développé des <a href="#projets">projets</a>.
+
+			<br><br>Je suis diplômé du baccalauréat <span title="Sciences et Technologies de l'Industrie et du Développement Durable">STI2D</span> que j'ai obtenu avec la mention bien.
+
+			<br><br>Mon objectif est de travailler dans le développement d'applications ou de jeux-vidéo, ce sont les deux domaines ou j'ai le plus de compétences.
+
+			<br><br>Accédez à mon <span title="Curriculum Vitæ">CV</span> au format <span title="Portable Document Folder">PDF</span> <a href="doc/Guibert_Remy_CV.pdf">ici</a>.
+		</p>
+	</section>
+
+	<!-- Projets -->
+	<section id="projets">
+		<h2>Mes projets</h2>
+		<h5>Au cours de ma scolarité j'ai développé quelques projets personnels et professionnels</h5>
+		<div class="grille">
+			<div>
+				<h4>Projet à l'IUT <img src="img/icon/html5.png" width="16" height="16" alt="Logo de HTML 5" title="Fait avec HTML 5"/><img src="img/icon/css3.png" width="16" height="16" alt="Logo de CSS 3" title="Fait avec CSS 3"/></h4>
+				<p>
+					Dans le cadre d'une <span title="Situation d'apprentissage et d'évaluation">SAÉ</span> j'ai, avec un camarade de classe, créé de A à Z un site web présentant et comparant deux entreprises. Le site est fait en sorte qu'il soit <span title="Adapte l'affichage à l'écran">responsive</span>. Vous pouvez le retrouver <a href="https://pattatedouce.github.io/sae-1-06/" target="_blank">ici</a>.
+				</p>
+			</div>
+			<div>
+				<h4>Serveur <span title="HyperText Transfer Protocol">HTTP</span> fait maison <img src="img/icon/python.png" width="16" height="16" alt="Logo de Python" title="Fait avec Python 3"/><img src="img/icon/html5.png" width="16" height="16" alt="Logo de HTML 5" title="Fait avec HTML 5"/><img src="img/icon/css3.png" width="16" height="16" alt="Logo de CSS 3" title="Fait avec CSS 3"/></h4>
+				<p>
+					C'est un serveur sans partie sécurisée qui gèrent les demandes <span title="'obtenir' en anglais">GET</span> pour afficher une page web.<br>
+					Il permet aussi de récupérer des fichiers du serveur depuis un autre terminal, ou d'envoyer des fichiers sur le serveur.<br>
+					Notamment utile pour partager des fichiers avec son <span title="Personal Computer (ordinateur personnel)">PC</span> et téléphone sans brancher de câble.
+				</p>
+			</div>
+			<div>
+				<h4>Pihook <img src="img/icon/python.png" width="16" height="16" alt="Logo de Python" title="Fait avec Python 3"/></h4>
+				<p>
+					C'est un programme permettant d'envoyer des messages sur un salon <span title="Logiciel de messagerie instantanée">Discord</span>, je l'ai fait en utilisant l'<span title="Application Programming Interface (interface de programmation d'application)">API</span> officielle.<br>
+					En me basant là-dessus j'ai coder un programme me notifiant lorsque qu'une personne que je suis est en direct sur <span title="Plateforme de diffusion en direct">Twitch</span>, là aussi en utilisant leur API.
+				</p>
+			</div>
+			<div>
+				<h4>Messagerie rudimentaire <img src="img/icon/python.png" width="16" height="16" alt="Logo de Python" title="Fait avec Python 3"/></h4>
+				<p>En explorant les façons de communiquer via Internet, j'ai voulu créer un petit programme permettant de s'envoyer des messages. Je l'ai par la suite amélioré pour qu'on puisse créer un compte, ajouter des amis et que les messages soit chiffrés.</p>
+			</div>
+			<div>
+				<h4>Morpion <img src="img/icon/python.png" width="16" height="16" alt="Logo de Python" title="Fait avec Python 3"/></h4>
+				<p>Le premier projet que j'ai réalisé avec ce langage a été le jeu du morpion, je l'ai fait avec le module PyGame qui permet de créer assez facilement des interfaces en créant des formes basiques.</p>
+			</div>
+			<div>
+				<h4>Et bien sûr...</h4>
+				<p>J'ai créé avec &lt;3 ce même site web :)</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Centres d'intérêt -->
+	<section id="interets">
+		<h2>Mes centres d'intérêt</h2>
+		<p>
+			Comme annoncé précédemment j'ai découvert la programmation au collège, et j'y suis depuis passionné et projette de travailler dans ce domaine plus tard, que ce soit pour coder des applications ou des jeux-vidéo, les deux me plaisent.
+
+			<br><br>Dans le domaine sportif je pratique le cyclisme occasionnellement (832 km en 46 h en 2021).
+			<br>J'ai aussi récemment commencé à pratiquer le skateboard.
+		</p>
+	</section>
+
+	<!-- Contact -->
+	<section id="contact">
+		<h2>Me contacter</h2>
+		<p>Vous pouvez me contacter par e-mail en cliquant <a href="mailto:remy.guibert@etu.univ-tlse2.fr">ici</a>.</p>
+		<p>Ou avec <a href="tel:+33000000000">ce numéro</a>.</p>
+		<p>Ou si vous connaissez Github vous pouvez retrouver mon profil <a href="https://github.com/PattateDouce/" target="_blank">ici</a>.</p>
+	</section>
+
+	<!-- Pied de page -->
+	<footer>
+		<p>Créé par moi-même</p>
+		<p>Hébergé sur <a href="https://pages.github.com/" target="_blank">Github Pages</a></p>
+	</footer>
+</body>
+</html>

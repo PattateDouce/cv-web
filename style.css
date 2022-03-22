@@ -1,0 +1,165 @@
+/* Style partagé */
+html {
+	font-family: "Calibri";
+	scroll-behavior: smooth;
+}
+body {
+	background-color: rgb(125, 60, 45);
+	color: #fff;
+	margin: auto;
+	text-align: center;
+}
+section {
+	padding: 10vh 10vw;
+}
+h1, h2, h3, h4, h5 {
+	font-family: "Comic Sans MS";
+}
+h2 {
+	text-decoration: underline;
+}
+a {
+	transition: 1s;
+	color: #AAA;
+}
+a:hover {
+	color: #AAA8;
+	text-decoration: none;
+}
+p {
+	text-align: justify;
+}
+span {
+	border-bottom: 1px dashed;
+	cursor: help;
+}
+
+
+/* Sections */
+#accueil {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 80vh;
+	min-height: 700px;
+}
+#accueil img {
+	border-radius: 35px;
+	margin: 5vh 0;
+}
+#accueil a {
+	background-color: #fff2;
+	margin: 5vh auto;
+	border-radius: 10px;
+	padding: 10px;
+}
+#accueil a:hover {
+	background-color: #fff1;
+	color: #AAA5;
+}
+#accueil, #projets, #contact {
+	background-color: rgb(120, 60, 30);
+}
+#apropos, #interets {
+	background-color: rgb(145, 80, 50);
+}
+.grille {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+#erreur-404 {
+	height: 80vh;
+}
+.au-milieu {
+	padding-top: 70vh;
+	transform: translateY(-50%);
+}
+
+
+/* En-tête */
+header {
+	position: sticky;
+	top: 0;
+}
+nav {
+	display: flex;
+}
+nav a {
+	color: rgb(30, 30, 30);
+	background-color: rgb(120, 120, 120);
+	text-decoration: none;
+	width: 20%;
+}
+nav a:hover {
+	color: rgba(40, 40, 40, .9);
+	background-color: rgba(120, 120, 120, 0.9);
+	text-decoration: underline;
+}
+
+
+/* Pied de page */
+footer {
+	display: flex;
+	justify-content: space-around;
+	background-color: rgb(145, 80, 50);
+}
+footer p {
+	margin: 20px;
+}
+
+
+
+
+
+/* Style ordinateur */
+@media screen and (min-width: 800px) {
+	body
+	{
+		font-size: 1.35em;
+		min-width: 801px;
+		max-width: 2500px;
+	}
+
+
+	/* En-tête */
+	nav a {
+		padding: calc(calc(7.5vh - 1.2em) / 2) 0;
+		font-size: 1.2em;
+	}
+
+
+	/* Sections */
+	.grille {
+		grid-gap: 5vw;
+	}
+}
+
+
+
+
+
+/* Style mobile */
+@media screen and (max-width: 800px) {
+	body
+	{
+		font-size: 2em;
+		min-width: 800px;
+		max-width: 800px;
+	}
+
+
+	/* En-tête */
+	nav a {
+		padding: calc(calc(10vh - 1.3em) / 2) 0;
+	}
+
+
+	/* Sections */
+	.grille {
+		grid-gap: 10vw;
+	}
+	.grille img {
+		width: 24px;
+		height: 24px;
+	}
+}
